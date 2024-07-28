@@ -19,5 +19,5 @@ try:
     print("Database 'alx_book_store' created successfully!")
 
 
-except Error as e:
-    print("Error Connecting to MYSQL")
+except mysql.connector.Error as e:
+    print("Error connecting to MySQL using mysql.connector.Error:", e)
